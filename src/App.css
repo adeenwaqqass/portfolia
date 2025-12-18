@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  background-color: rgb(32, 32, 32);
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  color: white;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 20px; /* add some side padding for mobile */
+  gap: 16px;
+  text-align: center;
+}
+
+.banner{
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 50px auto 0 auto;
+    border-radius: 5px;
+    border: 20px solid skyblue;
+    box-sizing: border-box;
+    background-color: rgb(32, 32, 32);
+}
+
+/* ensure hr and text align to the same width as the banner */
+.hero{
+    width: 100%;
+    max-width: 1200px;
+    margin: 5px auto 0 auto;
+    text-align: center;
+    padding-top: 44px;
+}
+
+hr {
+  margin: 5px 0 12px 0;
+  border: 0;
+  border-top: 1px solid #ccc; /* use a neutral/default-looking line */
+}
+
+.hero-text {
+  font-weight: 400;
+  margin-top: 12px;
+  text-align: center;
+  color: white;
+}
+
+.hero hr{
+    text-decoration: none;
+}
+.hero-text{
+    padding : 5px 5px
+}
+.name{
+    font-weight: 300;
+    font-style: italic;
+}
+.hero h3{
+    padding-bottom: 29px;
+
+}
+.hero p a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero p a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  padding: 0; /* remove any extra padding */
+}
+
+.about,
+.skills {
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.skill2 {
+  text-align: left;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.all-skills {
+  text-align: left;
+}
+
+.all-skills h3 {
+  margin: 16px 0 6px 0;
+  font-weight: 600;
+}
+
+.all-skills ul {
+  list-style: none;
+  padding: 8px 0;
+  margin: 0 0 12px 0;
+}
+
+.all-skills li {
+  padding: 6px 0;
+  line-height: 1.5;
+}
+
+.about-text {
+  text-align: left;
+  line-height: 1.6;
+  margin: 16px 0;
+}
+.about-list {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.about-list li {
+  padding: 8px 0;
+  line-height: 1.5;
+}
+
+.list-heading {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.links{
+    padding-bottom: 20px;
+}
+.hr-line-below-ol {
+  padding: 25px 0;
+}
+.hr-line-below-skills {
+  padding: 25px 0;
+}
+
+.hr-line-below-education {
+  padding: 25px 0;
+}
+
+.education {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.education-title {
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.education-text {
+  text-align: left;
+  line-height: 1.6;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.education h4 {
+  text-align: left;
+  line-height: 1.6;
+  margin: 8px 0 12px 0;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.Btech{
+  text-decoration: underline;
+  font-weight: bold;
+  color: white;
+}
+
+.duration-of-edu{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+  
+}
+
+.work-exp {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.work-exp-title {
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.cojag {
+  text-align: left;
+  line-height: 1.6;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+.work-exp p {
+  text-align: left;
+  line-height: 1.6;
+  margin: 8px 0;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.duration-of-work{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+.tech-stack{
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.hr-line-below-work-exp {
+  padding: 25px 0;
+}
+
+.achievements {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.achievements-title {
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.achievements li {
+  text-align: left;
+  line-height: 1.6;
+  padding: 8px 0;
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+}
+
+.achievements li::before {
+  content: "✨";
+  position: absolute;
+  left: 0;
+}
+
+.hr-line-below-achievements {
+  padding: 25px 0;
+}
+.IELTS{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+  font-weight: bold;
+}
+.SP{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+}
+.drive{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+}
+
+.Projects {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.projects-title {
+  text-align: left;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.Projects h2,
+.Projects h3 {
+  text-align: left;
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+}
+
+.Projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 16px 0;
+}
+
+.Projects li {
+  position: relative;
+  padding-left: 22px;
+  padding: 8px 0 8px 22px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.Projects li::before {
+  content: "➡️";
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.hr-line-below-projects {
+  padding: 25px 0;
+}
+
+.end-inline {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.end-inline img {
+  width: 133px;
+  height: 114px;
+}
+
+.remember-img {
+  width: 120px;
+}
+
+.run-img {
+  width: 120px;
+}
+
+.end-inline p {
+  margin: 0;
+}
+
+.p2 {
+  padding: 12px 0;
+}
+.link-to-codebase{
+  color: skyblue;
+  background-color: rgba(135, 206, 235, 0.2);
+}
